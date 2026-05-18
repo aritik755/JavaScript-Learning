@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Functions</title>
+</head>
+<body>    
+  <script>
+    // let age = 70;
+    // function printAge() {
+    //   console.log(`Your age is ${age}.`);
+    // }   
+    // printAge();
+    
+    // age = 48;
+    // printAge();
+    // age = 18;
+    // printAge();
+
+    function generateRandomMove(){
+      let random = Math.random();
+      let randomMove = random * 3;
+      return randomMove;
+    }
+    // let randomMove = generateRandomMove();
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+
+    // function determineDriveStatus(){
+    //   let age = 18;
+    //   if (age === undefined) {
+    //   return 'Age is not defined.';
+    //   }
+    //   console.log('Checking Driving Status........');
+    //   let status;
+    //   if (age >= 18){
+    //     return 'You can Drive.';
+    //   }
+    //   else{
+    //     return 'You cannot Drive.';
+    //   }
+    // }
+
+    // console.log(determineDriveStatus());
+
+    // function sum(a, b) {
+    //   let sum = a + b; 
+    //   return sum;
+    // }
+
+    // console.log(sum(24, 15));
+    // console.log(sum(34, 25));
+    // console.log(sum(-78, 55));
+    // console.log(sum(-244, -165));
+    // console.log(sum(0.84, 0.065));
+
+    function greeting(name = 'Pyaare') {
+      console.log(`Namaste ${name} Uncle.`);
+    }
+
+    greeting();
+
+  </script>
+</body>
+</html>
