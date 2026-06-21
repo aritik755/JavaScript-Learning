@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties of Array</title>
+</head>
+<body>
+  <script>
+    let obj = {lkj: 98};
+    let second = [1, true, null, 'asdfasd'];
+
+    console.log(Array.isArray(second)); // Checking of array.
+    console.log(Array.isArray(obj));
+
+    let numbers = [1,4,5,6,7,9,10,11,12];
+    console.log(numbers.length); // Size of array.
+
+    let arr = [1,2,3];
+    console.log(arr);
+    arr.push(6); // Adding the element in the end of the array.
+    console.log(arr);
+    console.log('popped: ' + arr.pop());
+    // arr.pop(); // Removing the element from the end if the array.
+    console.log(arr);
+
+    arr.shift(); // Remove the element from the start.
+    console.log(arr);
+
+    arr.unshift(7); // Add Element in the starting of the array.
+    console.log(arr);
+
+    let arr1 = [3,5,7,6];
+    console.log(arr1);
+    arr1.splice(1,2); // Remove Elements from 1st to 2nd index.
+    console.log(arr1);
+
+    console.log(arr1.toString()); // Convert into string.
+
+    let arr3 = [30,10,40,20];
+    arr3.sort(); // Sort the given array.
+    console.log(arr3);
+    
+    console.log(arr3.valueOf()); // Print the same array by making its copy.
+
+    let arrc = arr3;// Referencing in array.
+    arr3[0] = 99;
+    console.log(arr3);
+
+    let[a,b,c,d] = arr3;
+    console.log(a + " " + b + " " + c + " " + d); // Destructuring of array.
+  </script>
+</body>
+</html>
